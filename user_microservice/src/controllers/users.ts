@@ -4,8 +4,7 @@ import { getUser, createUser, updateUser, delUser } from "../services/users";
 import { createUserSchema, delUserSchema, updateUserSchema } from "../dtos/users";
 
 const users = new Elysia({prefix: "/users"}).get("/", function(context){
-    const user = authenticate(context)
-    return getUser({id: user.id})
+    return getUser()
 }).post("/", function(context){
     const user = authenticate(context)
     return createUser(context.body)

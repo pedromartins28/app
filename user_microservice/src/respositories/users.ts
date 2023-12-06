@@ -18,11 +18,14 @@ export function updateUser(user: updateUser){
     })
 }
 
-export function getUser(user: getUser){
+export function getUser(){
     return prisma.user.findMany({
-        where:{
-            id: user.id
-        }
+        select:{
+            email: true,
+            id: true,
+            name: true,
+            password: false
+        },
     })
 }
 
@@ -32,4 +35,12 @@ export function delUser(user: delUser){
             id: user.id
         }
     })
+}
+
+export function getUserByEmail(email: string){
+    return prisma.user.findUnique(
+        {where: {
+            email
+        }}
+    )
 }

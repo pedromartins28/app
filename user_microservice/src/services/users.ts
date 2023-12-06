@@ -1,16 +1,20 @@
 import * as users from '../respositories/users'
 import {createUser, delUser, getUser, updateUser} from '../dtos/users'
 
-export function createUser(user: createUser){
+export async function createUser(user: createUser){
+    user.password = await Bun.password.hash(user.password)
     return users.createUser(user)
 }
 
-export function updateUser(user: updateUser){
+export async function updateUser(user: updateUser){
+    if(user.password){
+        user.password = await Bun.password.hash(user.password)
+    }
     return users.updateUser(user)
 }
 
-export function getUser(user: getUser){
-    return users.getUser(user)
+export function getUser(){
+    return users.getUser()
 }
 
 export function delUser(user: delUser){
