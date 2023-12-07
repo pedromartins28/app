@@ -1,12 +1,24 @@
+# O que é o Bun.JS?
+
+Bun é um novo tempo de execução JavaScript criado do zero para servir ao ecossistema JavaScript moderno. Ele tem três objetivos principais de design:
+
+*Velocidade.* Bun começa rápido e corre rápido. Ele estende o JavaScriptCore, o mecanismo JS voltado para o desempenho criado para o Safari. À medida que a computação se move para a borda, isso é fundamental.
+
+*APIs elegantes.* O Bun fornece um conjunto mínimo de APIs altamente otimizadas para executar tarefas comuns, como iniciar um servidor HTTP e gravar arquivos.
+
+*DX coeso.* Bun é um kit de ferramentas completo para a criação de aplicativos JavaScript, incluindo um gerenciador de pacotes, um executor de teste e um empacotador.
+
+O Bun foi projetado como um substituto para o Node.js. Ele implementa nativamente centenas de APIs de Node.js e Web, incluindo , e muito mais.fspathBuffer
+
 # Sobre o Projeto
 
 O projeto consiste em um sistema distribuído que visa fornecer funcionalidades de login, autenticação de usuários e gerenciamento de tarefas. Ele é composto por dois principais microserviços:
 
-## Microserviço de Autenticação de Usuários
+### Microserviço de Autenticação de Usuários
 
 Este microserviço é responsável por gerenciar os usuários e conta com o processo de autenticação. 
 
-## Microserviço de Gerenciamento de Tarefas
+### Microserviço de Gerenciamento de Tarefas
 
 O segundo microserviço se trata do gerenciamento de tarefas atribuídas aos usuários autenticados. Ele oferece funcionalidades para criar, visualizar, atualizar e excluir tarefas.
 
