@@ -47,7 +47,7 @@ O segundo microserviço se trata do gerenciamento de tarefas atribuídas aos usu
 - Instale o Unzip
   - ```sudo apt install unzip```
 - Instale o Bun.JS  
-  - ```bash bun create elysia ./elysia-example ```
+  - ```curl -fsSL https://bun.sh/install | bash ```
 - Cheque sua instalação
   - ```bun --version```
 
