@@ -1,12 +1,12 @@
 # O que é o Bun.JS?
 
-Bun é um novo tempo de execução JavaScript criado do zero para servir ao ecossistema JavaScript moderno. Ele tem três objetivos principais de design:
+Bun é um novo runtime JavaScript criado do zero para servir ao ecossistema JavaScript moderno. Ele tem três objetivos principais de design:
 
 *Velocidade.* Bun começa rápido e corre rápido. Ele estende o JavaScriptCore, o mecanismo JS voltado para o desempenho criado para o Safari. À medida que a computação se move para a borda, isso é fundamental.
 
 *APIs elegantes.* O Bun fornece um conjunto mínimo de APIs altamente otimizadas para executar tarefas comuns, como iniciar um servidor HTTP e gravar arquivos.
 
-*DX coeso.* Bun é um kit de ferramentas completo para a criação de aplicativos JavaScript, incluindo um gerenciador de pacotes, um executor de teste e um empacotador.
+*Completo.* Bun é um kit de ferramentas completo para a criação de aplicativos JavaScript, incluindo um gerenciador de pacotes, um executor de teste e um empacotador.
 
 O Bun foi projetado como um substituto para o Node.js. Ele implementa nativamente centenas de APIs de Node.js e Web, incluindo , e muito mais.fspathBuffer
 
@@ -38,12 +38,14 @@ O segundo microserviço se trata do gerenciamento de tarefas atribuídas aos usu
   - ```bun run dev```
 - No navegador, entre na url:
   - Para user: http://localhost:3001
-  - Para task: http://localhost:3001
+  - Para task: http://localhost:3000
 
 # Como criar um projeto Elysia usando Bun
 
 ## Instalação:
 
+- Instale o Unzip
+  - ```sudo apt install unzip```
 - Instale o Bun.JS  
   - ```bash bun create elysia ./elysia-example ```
 - Cheque sua instalação
