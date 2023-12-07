@@ -18,7 +18,7 @@ export const getUserSchema = t.Object({
 })
 
 export const delUserSchema = t.Object({
-    id:  t.Number()
+    id:  t.String(),
 })
 
 export type createUser = (typeof createUserSchema)['static']
@@ -27,4 +27,4 @@ export type updateUser = (typeof updateUserSchema)['static']
 
 export type getUser = (typeof getUserSchema)['static']
 
-export type delUser = (typeof delUserSchema)['static']
+export type delUser = { id: number };

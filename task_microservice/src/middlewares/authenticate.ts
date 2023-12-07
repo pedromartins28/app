@@ -1,3 +1,5 @@
-export default function(context: any){
-    return {id: 0}
+import { authenticate } from "../services/auth";
+
+export default function (bearerToken: string) {
+  return authenticate(bearerToken);
 }
