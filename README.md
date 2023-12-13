@@ -32,6 +32,7 @@ O segundo microserviço se trata do gerenciamento de tarefas atribuídas aos usu
 ## Execute o projeto
 
 - Clone esse repositório em sua máquina
+- Certifique-se de ter o Node e o Bun instalados em sua máquina
 - No terminal do dentro da pasta app, instale as dependências usadas no projeto:
   - ```bun run setup```
 - Ainda no terminal, entre na pasta referente ao microserviço que deseja executar e digite:
